@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">3rdapp</string>
+    <string-array name="themeList">
+        <item>Select an option</item>
+        <item>white</item>
+        <item>sepia</item>
+        <item>black</item>
+        <item>pink</item>
+    </string-array>
+</resources>
