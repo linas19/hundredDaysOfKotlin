@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/topTextview"
+        android:layout_width="302dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="74dp"
+        android:text="Select any number of Checkbox and display the text on the Checkbox on Button Click"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintTop_toBottomOf="@+id/topTextview"
+        tools:layout_editor_absoluteX="50dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="23dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox2"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:onClick="onCheckboxClicked"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox3"
+        tools:layout_editor_absoluteX="48dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:onClick="buttonClicked"
+        android:text="Display selected Checkbox values"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/checkBox4" />
+
+    <TextView
+        android:id="@+id/bottomTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="No checkbox selected"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+    <TextView
+        android:id="@+id/CTextView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginTop="37dp"
+        android:text="Check one"
+        app:layout_constraintStart_toEndOf="@+id/checkBox"
+        app:layout_constraintTop_toBottomOf="@+id/topTextview" />
+
+    <TextView
+        android:id="@+id/CTextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="33dp"
+        android:text="Check two"
+        app:layout_constraintStart_toEndOf="@+id/checkBox2"
+        app:layout_constraintTop_toBottomOf="@+id/CTextView1" />
+
+    <TextView
+        android:id="@+id/CTextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="38dp"
+        android:text="Check three"
+        app:layout_constraintStart_toEndOf="@+id/checkBox3"
+        app:layout_constraintTop_toBottomOf="@+id/CTextView2" />
+
+    <TextView
+        android:id="@+id/CTextView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="39dp"
+        android:text="Check four"
+        app:layout_constraintStart_toEndOf="@+id/checkBox4"
+        app:layout_constraintTop_toBottomOf="@+id/CTextView3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
